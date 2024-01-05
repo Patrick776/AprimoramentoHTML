@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Formatação de tabelas / CSS - Classes</title>
+        <style type="text/css">
+            body{
+                background-color: hsl(240, 52%, 76%);
+            }
+            table{
+                border-spacing: 0px;
+                border-collapse: collapse;
+            }
+            
+            td{
+                border: 1px solid rgb(27, 8, 152);
+                padding: 0px;
+            }
+
+            .titulo1,.titulo2{
+                background-color: #808080;
+                text-align: center;
+                height: 50px;
+                vertical-align: middle; /*top(texto em cima, middle(texto centralizado)*/
+                color: #ffffff;
+                font-weight: bold;
+                font-size: 23px;
+                font-family: Arial;
+                font-style: italic;
+            }
+
+            .titulo2{
+                background-color: #b9b9c8;
+                height: 30px;
+                font-size: 15px;
+                color: black;
+            }
+
+            .colaborador, .salario{
+                color: rgb(7, 7, 170);
+                background-color: hsl(0, 8%, 87%);
+            }
+
+            .salario{
+                color: #800000;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <table width="500">
+            <tr>
+                <td colspan="2" class="titulo1">Tabela de Colaboradores</td> 
+            </tr>
+
+            <tr>
+                <td class="titulo2">Colaborador</td> <td class="titulo2">Salário</td>
+            </tr>
+
+            <tr>
+                <td class="colaborador">Paulo Cesar</td> <td class="salario">R$ 3.500,00</td>
+            </tr>
+
+            <tr>
+                <td class="colaborador">Maurício Oliveira</td> <td class="salario">R$ 5.000,00</td>
+            </tr>
+
+            <tr>
+                <td class="colaborador">Pedro Gonçalves</td> <td class="salario">R$ 1.500,00</td>
+            </tr>
+        </table>
+    </body>
+</html>
